@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Animator animator;
+
     public float horizontal;
-    public float speed = 8f;
+    public float speed = 5f;
     public float jumpingPower = 9f;
     public bool isFacingRight = true;
     public Rigidbody2D rb2d;
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D> ();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,7 +29,28 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            animator.SetBool("isJumping", true);
             rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpingPower);
+        }
+
+        if (!isGrounded && rb.linearVelocity.y < 0)
+        {
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isFalling", true);
+        }
+
+        if (isGrounded && rb.linearVelocity.x == 0 && rb.linearVelocity.y == 0)
+        {
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isRunning", false);
+        }
+
+        if (isGrounded && rb.linearVelocity.x != 0 && rb.linearVelocity.y == 0)
+        {
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isRunning", true);
         }
 
         Flip();
