@@ -30,15 +30,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             animator.SetBool("isJumping", true);
+            animator.SetBool("isRunning", false);
             rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpingPower);
         }
 
         if (!isGrounded && rb.linearVelocity.y < 0)
         {
+            animator.SetBool("isRunning", false);
             animator.SetBool("isJumping", false);
             animator.SetBool("isFalling", true);
         }
 
+        Debug.Log(rb.linearVelocity);
         if (isGrounded && rb.linearVelocity.x == 0 && rb.linearVelocity.y == 0)
         {
             animator.SetBool("isFalling", false);

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Epitech x Studio _ Ateliers.sln"
+    "dotnet.defaultSolution": "Epitech-x-Studio-Ateliers.sln"
 }
