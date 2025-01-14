@@ -108,8 +108,8 @@ Transform:
   m_GameObject: {fileID: 2465928053089891533}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53, y: 0.51, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.02, y: 3.24, z: -0.02674193}
+  m_LocalScale: {x: 0.6889, y: 0.6889, z: 0.6889}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4751175001424101985}
@@ -266,6 +266,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  SpawnPointMuseumToHub: {fileID: 4283869305700852100, guid: d845bb355ac1c7444ae18e456dc3e958, type: 3}
+  SpawnPointHubToMuseum: {fileID: 6726868564723472123, guid: 931c46e0dcbd28b4d9bd76f6bb3c3653, type: 3}
 --- !u!95 &2899419665403180221
 Animator:
   serializedVersion: 7
