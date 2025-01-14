@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask groundLayer;
+    public GameObject SpawnPointMuseumToHub;
+    public GameObject SpawnPointHubToMuseum;
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isFalling", true);
         }
 
-        Debug.Log(rb.linearVelocity);
         if (isGrounded && rb.linearVelocity.x == 0 && rb.linearVelocity.y == 0)
         {
             animator.SetBool("isFalling", false);
@@ -64,8 +66,25 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2 (horizontal * speed, rb.linearVelocity.y);
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "AccessToHub")
+        {
+            SceneManager.LoadScene("Hub");
+            DontDestroyOnLoad(transform.gameObject);
+            transform.position = SpawnPointMuseumToHub.transform.position;
+        }
+        if (other.gameObject.tag == "AccessToMuseum")
+        {
+            SceneManager.LoadScene("Museum");
+            DontDestroyOnLoad(transform.gameObject);
+            transform.position = SpawnPointHubToMuseum.transform.position;
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (collision.gameObject.tag == "Ground" && !isGrounded)
         {
             isGrounded = true;
