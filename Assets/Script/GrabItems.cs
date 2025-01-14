@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemGrab : MonoBehaviour
+public class GrabItems : MonoBehaviour
 {
     public GameObject Roue_Mulhouse1, Roue_Mulhouse2, Roue_Mulhouse3;
     private bool IsPickeable;
@@ -26,34 +26,34 @@ public class ItemGrab : MonoBehaviour
         }
         if (NumberGears > 3)
             NumberGears = 3;
-        if (NumberGears == 3)
-        {
-            Roue_Mulhouse1.gameObject.SetActive(true);
-            Roue_Mulhouse2.gameObject.SetActive(true);
-            Roue_Mulhouse3.gameObject.SetActive(true);
-            return;
-        }
-        if (NumberGears == 2)
-        {
-            Roue_Mulhouse1.gameObject.SetActive(true);
-            Roue_Mulhouse2.gameObject.SetActive(true);
-            Roue_Mulhouse3.gameObject.SetActive(false);
-            return;
-        }
-        if (NumberGears == 1)
-        {
-            Roue_Mulhouse1.gameObject.SetActive(true);
-            Roue_Mulhouse2.gameObject.SetActive(false);
-            Roue_Mulhouse3.gameObject.SetActive(false);
-            return;
-        }
-        if (NumberGears == 0)
-        {
-            Roue_Mulhouse1.gameObject.SetActive(false);
-            Roue_Mulhouse2.gameObject.SetActive(false);
-            Roue_Mulhouse3.gameObject.SetActive(false);
-            return;
-        }
+        // if (NumberGears == 3)
+        // {
+        //     Roue_Mulhouse1.gameObject.SetActive(true);
+        //     Roue_Mulhouse2.gameObject.SetActive(true);
+        //     Roue_Mulhouse3.gameObject.SetActive(true);
+        //     return;
+        // }
+        // if (NumberGears == 2)
+        // {
+        //     Roue_Mulhouse1.gameObject.SetActive(true);
+        //     Roue_Mulhouse2.gameObject.SetActive(true);
+        //     Roue_Mulhouse3.gameObject.SetActive(false);
+        //     return;
+        // }
+        // if (NumberGears == 1)
+        // {
+        //     Roue_Mulhouse1.gameObject.SetActive(true);
+        //     Roue_Mulhouse2.gameObject.SetActive(false);
+        //     Roue_Mulhouse3.gameObject.SetActive(false);
+        //     return;
+        // }
+        // if (NumberGears == 0)
+        // {
+        //     Roue_Mulhouse1.gameObject.SetActive(false);
+        //     Roue_Mulhouse2.gameObject.SetActive(false);
+        //     Roue_Mulhouse3.gameObject.SetActive(false);
+        //     return;
+        // }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

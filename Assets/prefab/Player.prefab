@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 1581039787035339675}
   - component: {fileID: 1080418091789480030}
   - component: {fileID: 2899419665403180221}
+  - component: {fileID: -4396446335963805709}
+  - component: {fileID: -6874811888968731012}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -158,7 +160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 900
   m_Sprite: {fileID: -1167975446, guid: 496562456fdbe6647887febf11640c70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -290,3 +292,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4396446335963805709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465928053089891533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd33ed5d8a0baa4b9c8e5ba3af24274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Roue_Mulhouse1: {fileID: 0}
+  Roue_Mulhouse2: {fileID: 0}
+  Roue_Mulhouse3: {fileID: 0}
+  NumberGears: 0
+  Roue: {fileID: 0}
+--- !u!114 &-6874811888968731012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465928053089891533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e5fb1fc6c899946b9a7572299a6672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NumberGearsPlaced: 0
+  grabItems: {fileID: -4396446335963805709}

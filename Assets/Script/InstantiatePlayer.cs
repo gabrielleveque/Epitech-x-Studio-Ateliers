@@ -9,7 +9,6 @@ public class InstantiatePlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log(isInstantiate);
         if (!isInstantiate)
         {
             Instantiate(player, new Vector2(0.0f, 0.0f), Quaternion.identity);

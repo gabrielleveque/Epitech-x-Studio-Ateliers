@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - AccessToHub
   - AccessToMuseum
+  - Roue_Item
+  - GearFrameInside
   layers:
   - Default
   - TransparentFX

@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
+        gameObject.SetActive(true);
         rb = GetComponent<Rigidbody2D> ();
         animator = GetComponent<Animator>();
     }
@@ -28,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        gameObject.SetActive(true);
         DontDestroyOnLoad(gameObject);
         horizontal = Input.GetAxis("Horizontal");
 
