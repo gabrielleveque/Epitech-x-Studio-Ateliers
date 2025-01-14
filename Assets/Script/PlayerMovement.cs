@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DontDestroyOnLoad(gameObject);
         horizontal = Input.GetAxis("Horizontal");
 
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -71,13 +72,11 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "AccessToHub")
         {
             SceneManager.LoadScene("Hub");
-            DontDestroyOnLoad(transform.gameObject);
             transform.position = SpawnPointMuseumToHub.transform.position;
         }
         if (other.gameObject.tag == "AccessToMuseum")
         {
             SceneManager.LoadScene("Museum");
-            DontDestroyOnLoad(transform.gameObject);
             transform.position = SpawnPointHubToMuseum.transform.position;
         }
     }
