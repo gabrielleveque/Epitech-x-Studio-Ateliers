@@ -82,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene("Museum");
             transform.position = SpawnPointHubToMuseum.transform.position;
         }
+        
         if (other.gameObject.tag == "Ground" && !isGrounded)
         {
             isGrounded = true;
