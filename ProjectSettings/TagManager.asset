@@ -9,6 +9,9 @@ TagManager:
   - AccessToMuseum
   - Roue_Item
   - GearFrameInside
+  - Old_man
+  - Quest_text
+  - Quest_continue
   layers:
   - Default
   - TransparentFX
