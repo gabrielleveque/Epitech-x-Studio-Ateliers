@@ -6,8 +6,8 @@ public class PlayerQuestState : MonoBehaviour
     public bool questAccepted;
     public bool questTextLaunched;
     public bool missingPictureFound;
+    public bool secondQuestDone;
     private bool IsAcceptable;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +15,7 @@ public class PlayerQuestState : MonoBehaviour
         questAccepted = false;
         questTextLaunched = false;
         missingPictureFound = false;
+        secondQuestDone = false;
         IsAcceptable = false;
     }
 

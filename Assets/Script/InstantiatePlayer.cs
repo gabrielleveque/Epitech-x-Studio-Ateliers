@@ -11,7 +11,7 @@ public class InstantiatePlayer : MonoBehaviour
     {
         if (!isInstantiate)
         {
-            Instantiate(player, new Vector2(0.0f, 0.0f), Quaternion.identity);
+            Instantiate(player, new Vector2(-8.58f, 15.0f), Quaternion.identity);
             isInstantiate = true;
         }
     }
