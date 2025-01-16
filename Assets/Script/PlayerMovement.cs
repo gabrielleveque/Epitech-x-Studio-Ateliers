@@ -82,20 +82,16 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene("Museum");
             transform.position = SpawnPointHubToMuseum.transform.position;
         }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        if (collision.gameObject.tag == "Ground" && !isGrounded)
+        
+        if (other.gameObject.tag == "Ground" && !isGrounded)
         {
             isGrounded = true;
         }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Ground" && isGrounded){
+        if (other.gameObject.tag == "Ground" && isGrounded){
             isGrounded = false;
         }
     }
