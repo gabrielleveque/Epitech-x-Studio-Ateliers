@@ -12,6 +12,8 @@ TagManager:
   - Old_man
   - Quest_text
   - Quest_continue
+  - Tuto_pannel
+  - tuto_blocker
   layers:
   - Default
   - TransparentFX
