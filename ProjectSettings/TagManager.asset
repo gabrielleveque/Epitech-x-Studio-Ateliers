@@ -14,6 +14,7 @@ TagManager:
   - Quest_continue
   - Tuto_pannel
   - tuto_blocker
+  - Secret_pic
   layers:
   - Default
   - TransparentFX

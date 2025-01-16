@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class GrabItems : MonoBehaviour
 {
+    public PlayerQuestState playerQuestState;
     public GameObject Roue_Mulhouse1, Roue_Mulhouse2, Roue_Mulhouse3;
     private bool IsPickeable;
+    private bool IsMapPickeable;
     public int NumberGears;
     public GameObject Roue;
 
     private void Start()
     {
         IsPickeable = false;
+        IsMapPickeable = false;
         NumberGears = 0;
         // Roue_Mulhouse1.gameObject.SetActive(false);
         // Roue_Mulhouse2.gameObject.SetActive(false);
@@ -24,6 +27,12 @@ public class GrabItems : MonoBehaviour
         {
             PickItem();
         }
+        
+        if (IsMapPickeable && Input.GetKeyDown(KeyCode.E))
+        {
+            PickSecretMap();
+        }
+
         if (NumberGears > 3)
             NumberGears = 3;
         // if (NumberGears == 3)
@@ -63,6 +72,11 @@ public class GrabItems : MonoBehaviour
             IsPickeable = true;
             Roue = collision.gameObject;    
         }
+        if (collision.tag == "Secret_pic")
+        {
+            IsMapPickeable = true;
+            Roue = collision.gameObject;    
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -72,11 +86,22 @@ public class GrabItems : MonoBehaviour
             IsPickeable = false;
             Roue = null;
         }
+        if (collision.tag == "Secret_pic")
+        {
+            IsMapPickeable = false;
+            Roue = null;    
+        }
     }
 
     private void PickItem ()
     {
         Destroy(Roue);
         NumberGears += 1;
+    }
+
+    private void PickSecretMap ()
+    {
+        playerQuestState.missingPictureFound = true;
+        Destroy(Roue);
     }
 }
