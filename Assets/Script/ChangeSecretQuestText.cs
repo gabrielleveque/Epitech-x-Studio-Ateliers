@@ -14,7 +14,6 @@ public class ChangeSecretQuestText : MonoBehaviour
         GameObject myPlayer = GameObject.FindWithTag("Player");
         PlayerQuestState playerQuestState = myPlayer.GetComponent<PlayerQuestState>();
 
-        Debug.Log("test");
         if (Input.GetKeyDown(KeyCode.Q))
         {
             playerQuestState.secondQuestDone = true;
