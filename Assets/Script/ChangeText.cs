@@ -31,6 +31,7 @@ public class ChangeText : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && textIndex < textValues.Length)
         {
+            Debug.Log("here");
             text.text = textValues[textIndex];
             textIndex++;
             if (textIndex >= textValues.Length)
@@ -40,7 +41,6 @@ public class ChangeText : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.E) && textIndex >= textValues.Length)
         {
-            text.text = "Avez-vous retrouver mon image ?\n\nLui rendre l'image\nLa garder pour la revendre";
             playerQuestState.questAccepted = true;
         }
     }

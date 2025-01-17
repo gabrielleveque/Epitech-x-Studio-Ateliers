@@ -19,5 +19,9 @@ public class OldManQuestState : MonoBehaviour
             playerQuestState.missingPictureFound &&
             (!playerQuestState.secondQuestDone && !playerQuestState.secondQuestDoneAndDecline)
         );
+        if (playerQuestState.secondQuestDoneAndDecline)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
