@@ -13,12 +13,16 @@ public class LevelSelector : MonoBehaviour
 
     private void Start()
     {
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        GameObject myPlayer = GameObject.FindWithTag("Player");
+        PlaceItems placeItems = myPlayer.GetComponent<PlaceItems>();
+        int j = 0;
 
-        for (int i = 0; i < levelButtons.Length; i++){
-            if (i + 1 > levelReached){
-                levelButtons[i].interactable = false;
+        Debug.Log(placeItems.NumberImages);
+        for (int i = 0; i < 8; i += 2) {
+            if (i > placeItems.NumberImages) {
+                levelButtons[j].interactable = false;
             }
+            j++;
         }
     }
 

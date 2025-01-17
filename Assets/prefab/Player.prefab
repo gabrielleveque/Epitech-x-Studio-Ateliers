@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: -6874811888968731012}
   - component: {fileID: -4326000988046268902}
   - component: {fileID: 6919810628194527335}
+  - component: {fileID: 3345508055793740627}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -306,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd33ed5d8a0baa4b9c8e5ba3af24274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerQuestState: {fileID: 0}
   Roue_Mulhouse1: {fileID: 0}
   Roue_Mulhouse2: {fileID: 0}
   Roue_Mulhouse3: {fileID: 0}
@@ -390,3 +392,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 4}
   m_EdgeRadius: 0
+--- !u!114 &3345508055793740627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465928053089891533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ebd806acef94c689bd8bce276e08d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeItems: {fileID: -6874811888968731012}
