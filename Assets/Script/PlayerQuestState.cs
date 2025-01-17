@@ -6,7 +6,9 @@ public class PlayerQuestState : MonoBehaviour
     public bool questAccepted;
     public bool questTextLaunched;
     public bool missingPictureFound;
+    public bool secondQuestTextLaunched;
     public bool secondQuestDone;
+    public bool secondQuestDoneAndDecline;
     private bool IsAcceptable;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,7 +17,9 @@ public class PlayerQuestState : MonoBehaviour
         questAccepted = false;
         questTextLaunched = false;
         missingPictureFound = false;
+        secondQuestTextLaunched = false;
         secondQuestDone = false;
+        secondQuestDoneAndDecline = false;
         IsAcceptable = false;
     }
 
@@ -25,11 +29,17 @@ public class PlayerQuestState : MonoBehaviour
         if (SceneManager.GetActiveScene().name != "Hub")
         {
             questTextLaunched = false;
+            secondQuestTextLaunched = false;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && IsAcceptable && !questAccepted)
         {
             questTextLaunched = true;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.E) && IsAcceptable && missingPictureFound)
+        {
+            secondQuestTextLaunched = true;
         }  
     }
 

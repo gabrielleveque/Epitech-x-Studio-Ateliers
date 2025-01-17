@@ -15,11 +15,12 @@ public class LevelSelector : MonoBehaviour
     {
         GameObject myPlayer = GameObject.FindWithTag("Player");
         PlaceItems placeItems = myPlayer.GetComponent<PlaceItems>();
+        PlayerQuestState playerQuestState = myPlayer.GetComponent<PlayerQuestState>();
         int j = 0;
 
         Debug.Log(placeItems.NumberImages);
         for (int i = 0; i < 8; i += 2) {
-            if (i > placeItems.NumberImages) {
+            if (i > placeItems.NumberImages || !playerQuestState.questAccepted) {
                 levelButtons[j].interactable = false;
             }
             j++;

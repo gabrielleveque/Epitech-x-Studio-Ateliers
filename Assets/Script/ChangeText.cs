@@ -20,10 +20,13 @@ public class ChangeText : MonoBehaviour
         GameObject myPlayer = GameObject.FindWithTag("Player");
         PlayerQuestState playerQuestState = myPlayer.GetComponent<PlayerQuestState>();
         String[] textValues = {
-            "bonjour",
-            "je",
-            "suis",
-            "moi"
+            "Les tableaux de mon musée se sont envolés, et celui-ci se retrouve complètement vidé de son charme d'antan !",
+            "Votre mission, si vous l'accepter, serait de chercher les roues de Mulhouse qui se sont égarées dans la ville.",
+            "Cela permettra de réparer temporairement mon imprimante et de restaurer le musée.",
+            "Une dernière chose avant que vous partiez... J'ai perdu une image très importante, qui faisait toute la réputation de mon musée.",
+            "Sa valeur est inestimable... J'espère que vous pourrez également la retrouver et me la rapporter.",
+            "Tout ce dont je me souviens est le bruit d'un sifflet de train...",
+            "Bonne chance à vous !!"
         };
 
         if (Input.GetKeyDown(KeyCode.E) && textIndex < textValues.Length)
@@ -37,6 +40,7 @@ public class ChangeText : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.E) && textIndex >= textValues.Length)
         {
+            text.text = "Avez-vous retrouver mon image ?\n\nLui rendre l'image\nLa garder pour la revendre";
             playerQuestState.questAccepted = true;
         }
     }

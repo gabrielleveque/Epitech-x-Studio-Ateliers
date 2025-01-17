@@ -15,6 +15,9 @@ public class OldManQuestState : MonoBehaviour
         PlayerQuestState playerQuestState = myPlayer.GetComponent<PlayerQuestState>();
     
         gameObject.transform.GetChild(0).gameObject.SetActive(!playerQuestState.questAccepted);
-        gameObject.transform.GetChild(1).gameObject.SetActive(playerQuestState.missingPictureFound);
+        gameObject.transform.GetChild(1).gameObject.SetActive(
+            playerQuestState.missingPictureFound &&
+            (!playerQuestState.secondQuestDone && !playerQuestState.secondQuestDoneAndDecline)
+        );
     }
 }
