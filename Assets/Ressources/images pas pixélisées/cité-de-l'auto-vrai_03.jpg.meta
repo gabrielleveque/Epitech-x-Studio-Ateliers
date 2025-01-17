@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "cite\u0301-de-l'auto-vrai_03_0": -5158853681604033541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

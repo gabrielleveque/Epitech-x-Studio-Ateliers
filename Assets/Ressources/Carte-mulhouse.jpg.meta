@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carte-mulhouse_0: 490093930312574438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

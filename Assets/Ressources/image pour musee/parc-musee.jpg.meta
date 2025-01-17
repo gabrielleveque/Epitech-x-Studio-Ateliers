@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      parc-musee_0: -6476032751437748622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

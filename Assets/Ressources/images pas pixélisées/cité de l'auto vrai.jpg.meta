@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "cite\u0301 de l'auto vrai_0": -1570849379540647647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

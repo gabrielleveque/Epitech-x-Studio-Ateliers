@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Muse\u0301e du Train Nicolas Muguet_0": -3760024472970920147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

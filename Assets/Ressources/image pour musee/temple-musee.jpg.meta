@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      temple-musee_0: -7757152346562686824
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
