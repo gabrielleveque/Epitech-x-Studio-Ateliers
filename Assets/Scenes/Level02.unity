@@ -2887,6 +2887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathZone
       objectReference: {fileID: 0}
+    - target: {fileID: 4526061872641781987, guid: 57e65dd9242344281a7fca6905665fc6, type: 3}
+      propertyPath: levelSpawnPoint
+      value: 
+      objectReference: {fileID: 2141544940090879264, guid: dbfcd5e580802ad48a0a630e60aa5860, type: 3}
     - target: {fileID: 5703303072350879020, guid: 57e65dd9242344281a7fca6905665fc6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.2

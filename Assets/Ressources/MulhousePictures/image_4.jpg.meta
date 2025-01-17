@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f8b2cde321e31af419d1935d11c112f3
+guid: 2efc41368a4b5c34e9cd55b9f7d7f07f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2563988081136539104
-    second: "place_reunion_200616\xA9OTC-Mulhouse-et-sa-region_B.Wirth_-1920x960_0"
+      213: 559972822157196553
+    second: musee de l auto 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "place_reunion_200616\xA9OTC-Mulhouse-et-sa-region_B.Wirth_-1920x960_0"
+      name: musee de l auto 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 960
+        width: 2896
+        height: 1629
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e59a70439d159320800000000000000
-      internalID: 2563988081136539104
+      spriteID: 90d7d8c905c65c700800000000000000
+      internalID: 559972822157196553
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "place_reunion_200616\xA9OTC-Mulhouse-et-sa-region_B.Wirth_-1920x960_0": 2563988081136539104
+      musee de l auto 3_0: 559972822157196553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -18,8 +18,8 @@ public class LevelSelector : MonoBehaviour
         PlayerQuestState playerQuestState = myPlayer.GetComponent<PlayerQuestState>();
         int j = 0;
 
-        Debug.Log(placeItems.NumberImages);
         for (int i = 0; i < 8; i += 2) {
+            Debug.Log(j);
             if (i > placeItems.NumberImages || !playerQuestState.questAccepted) {
                 levelButtons[j].interactable = false;
             }

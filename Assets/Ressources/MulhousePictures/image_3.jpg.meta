@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4b65f92b26155ad44ac4eb7067462a14
+guid: b95f235bf42aced49b4f55fb0bce62f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 55331204868005922
-    second: "Parc_Steinbach\xA9OTC-BWirth-4-1920x960_0"
+      213: 4415035289733604701
+    second: cite dutrain nuit2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Parc_Steinbach\xA9OTC-BWirth-4-1920x960_0"
+      name: cite dutrain nuit2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 960
+        width: 960
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 220e62b007394c000800000000000000
-      internalID: 55331204868005922
+      spriteID: d55a263443b554d30800000000000000
+      internalID: 4415035289733604701
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Parc_Steinbach\xA9OTC-BWirth-4-1920x960_0": 55331204868005922
+      cite dutrain nuit2_0: 4415035289733604701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
