@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class ShowNpc : MonoBehaviour
 {
+    public GameObject secretImage;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        secretImage.SetActive(false);
         SetImageVisibility(false);
     }
 
@@ -16,6 +19,7 @@ public class ShowNpc : MonoBehaviour
 
         if (playerQuestState.secondQuestDone)
         {
+            secretImage.SetActive(true);
             SetImageVisibility(true);
         }
     }

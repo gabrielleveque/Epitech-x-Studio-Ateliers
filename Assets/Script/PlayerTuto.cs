@@ -24,7 +24,6 @@ public class PlayerTuto : MonoBehaviour
     {
         GameObject tutoBlocker = GameObject.FindWithTag("tuto_blocker");
 
-        Debug.Log(Input.GetKeyDown(KeyCode.Q));
         CheckMovement();
         if (Qkey && Dkey)
         {
